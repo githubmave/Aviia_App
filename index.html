@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Avvia App</title>
+  <title>Aviia App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/app.css"/>
@@ -15,27 +15,23 @@
   
 </head>
 <body>
-  <!-- <ul class="menu"> -->
-    <!-- <li><a href="#/groupedProjects">Grouped Projects</a></li> -->
-    
-    
-  <!-- </ul> -->
+      <nav class="{{active}}" >
+
+          <!-- When a link in the menu is clicked, we set the active variable -->
+
+          <a href="#/question1" class="home" ng-click="active='home'">Q1</a>
+          <a href="#/question2" class="projects" ng-click="active='projects'">Q2</a>
+          <!-- <a href="#/foodListView" class="services" ng-click="active='services'">Home</a> -->
+          <!-- <a href="#/saveTrips" class="services" ng-click="active='services'">Save Trips</a> -->
+
+        
+      </nav>
+
 
  
-  <div ng-view></div>
+       <div ng-view></div>
   
-     <!-- <video preload="auto" controls="controls"> -->
-        <!-- <source ng-src="media/{{groupedProjList[routeId].CONTACTNAME}} .mp4" type='video/mp4'> -->
-        <!-- <source src="partials/StevenQ1_Ans1.mp4" type='video/mp4'> -->
-     <!-- </video> -->
-
-     <!-- <video controls="controls" name="Video Name" src="partials/StevenQ1_Ans1.mp4"></video> -->
-
- 
-  
-
-  <!-- In production use: -->
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script> -->
+    
  
   <script src="bower_components/angular/angular.js"></script>
   <!-- <script src="bower_components/angular/angular.min.js"></script> -->

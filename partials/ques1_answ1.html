@@ -1,0 +1,78 @@
+ 
+<section class="row-fluid">  
+ <form class="span8">
+ 	<div class="container-fluid">
+            <h1>Aviia--question 1</h1>    
+             
+ 	
+ 
+ 	
+ 		
+ 		<!-- <select   ng-model='selectedCat'  ng-options='cat.TITLE for cat in applicantList' ng-click='groupingAnsw()'     ></select> -->
+
+ 		 		<!-- <select   ng-model='selectedAplic'  ng-options='cat.TITLE for cat in applicantList'      ></select> -->
+
+        <label ng-repeat='cat in applicantList'>
+            
+            <a href=""  ng-click='groupingAnsw2(cat)'>        
+                  <!-- <img ng-src="img/png 128/{{food.SHORTNAME}}.png">  -->
+                  {{cat.TITLE}}
+               
+            </a>
+
+        </label>        
+
+ 	</ul>	
+ 	<!-- <ul>	 -->
+ 		<!-- <input type="button" value="Go" class="btn btn-danger" ng-click='groupingAnsw()'/> -->
+ 		<!-- <input type="button" value="Go-1" class="btn btn-danger" ng-click='getVideoUrl()'/> -->
+
+
+
+  			
+ 	<!-- </ul> -->
+ 		
+ 	
+ 		 <ul>
+ 		 	<li>
+ 		 		Question 1===={{selectedAplicList[1].TITLE}}
+
+ 		 	</li>
+ 			
+	 		  	
+				<!-- <li  ng-repeat='project in groupedProjList' > -->
+
+					<!-- <a href="#/questions/{{groupedProjList.indexOf(project)}}" >{{project.QUESTIONS}}</a> -->
+
+                    
+
+
+				<!-- </li> -->
+
+
+					
+
+ 	
+ 	</ul>
+ 	
+ 		
+ 	</div>
+
+
+ 	<div>
+ 		
+            <!-- Work OK<video controls="controls" name="Video Name" src="media/StevenQ1_Ans1.mp4"></video> -->
+            <!-- Work OK<video controls="controls" name="Video Name" ng-src="media/StevenQ1_Ans1.mp4"></video> -->
+            <!-- <video controls="controls" name="Video Name" ng-src="media/{{selectedCat.CONTACTNAME}}.mp4"></video> -->
+
+
+            <video controls="controls" name="Video Name" ng-src="{{getVideoUrl()}}"></video>
+
+
+ 	</div> 	     
+
+ 	
+ 	
+ </form> 
+ -
+</section> 

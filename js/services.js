@@ -18,6 +18,8 @@ module.service('getAnswService', function () {
   // var groupedProjList=[{'id':'4','name':'bernie','age':'15'}];
       var groupedProjList=[{}];
 
+      var selectedAplicList=[{}];
+
    
    //********save projects
    
@@ -42,5 +44,31 @@ module.service('getAnswService', function () {
    	return groupedProjList;
    	
    };
+
+    //********save selected applicant
+
+    this.saveAplic=function(applicant){
+      
+        
+      selectedAplicList.push(applicant);
+      
+      
+   };
+   
+   
+   this.clearAplic=function(){
+      
+        selectedAplicList=[{}];
+        return selectedAplicList;
+      
+   };
+   
+   this.listAplic=function(){
+      
+      return selectedAplicList;
+      
+   };
+
+
 
 });
