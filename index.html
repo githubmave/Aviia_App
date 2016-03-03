@@ -1,39 +1,51 @@
 <!DOCTYPE html>
+<html lang="en" ng-app="myApp">
 
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Aviia App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/app.css"/>
-  
-  	<link href="css/style.css" rel="stylesheet" />
-	<link href="css/bootstrap-combined.min.css" rel="stylesheet" />
 
-  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - for Aviia-web</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link href="css/bootstrap-combined.min.css" rel="stylesheet" />
+
+    <!-- <link href="css/style.css" rel="stylesheet" /> -->
+
+
 </head>
+
 <body>
-      <nav class="{{active}}" >
+
+<nav class="{{active}}" >
 
           <!-- When a link in the menu is clicked, we set the active variable -->
 
           <a href="#/question1" class="home" ng-click="active='home'">Q1</a>
           <a href="#/question2" class="projects" ng-click="active='projects'">Q2</a>
-          <!-- <a href="#/foodListView" class="services" ng-click="active='services'">Home</a> -->
-          <!-- <a href="#/saveTrips" class="services" ng-click="active='services'">Save Trips</a> -->
+
+
 
         
-      </nav>
+</nav>
+
+<div ng-view >  </div>
+
+   
+
+        
 
 
- 
-       <div ng-view></div>
-  
-    
- 
-  <script src="bower_components/angular/angular.js"></script>
+     <script src="bower_components/angular/angular.js"></script>
   <!-- <script src="bower_components/angular/angular.min.js"></script> -->
 
 
@@ -49,5 +61,8 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+
+
 </body>
+
 </html>
